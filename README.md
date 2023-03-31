@@ -1,1 +1,1 @@
-# Exercícios em Linguagem Java :coffe:
+# Exercícios em Linguagem Java :coffee:
