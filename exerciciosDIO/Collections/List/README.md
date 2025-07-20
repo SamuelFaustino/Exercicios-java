@@ -4,7 +4,7 @@ Este documento resume conceitos importantes sobre manipulação de listas (`Arra
 
 ---
 
-## ⚠️ `ConcurrentModificationException` em `ArrayList`
+## `ConcurrentModificationException` em `ArrayList`
 
 ### Por que acontece?
 
@@ -70,7 +70,7 @@ for (int i = 0; i < list.size(); i++) {
 
 Em uma lista como `["banana", "banana", "banana"]`, após remover o item do índice `0`, os elementos se deslocam e a segunda `"banana"` pula para o índice `0`, mas o `for` avança para `i = 1`, **pulando essa nova posição**. Resultado: **uma "banana" pode sobrar na lista**.
 
-### ✅ Solução: percorrer de trás para frente
+###  Solução: percorrer de trás para frente
 
 ```java
 for (int i = list.size() - 1; i >= 0; i--) {
