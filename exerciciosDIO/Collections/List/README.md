@@ -1,4 +1,4 @@
-# 🧾 Java – Manipulação de Listas e Estruturas de Dados
+# Java – Manipulação de Listas e Estruturas de Dados
 
 Este documento resume conceitos importantes sobre manipulação de listas (`ArrayList`) em Java, com foco em remoção de elementos durante a iteração e a relação com a exceção `ConcurrentModificationException`.
 
@@ -48,7 +48,7 @@ Essa exceção ocorre quando modificamos uma lista (`ArrayList`) enquanto a perc
 
 ---
 
-## 🧠 Características da `ArrayList` que causam o problema
+## Características da `ArrayList` que causam o problema
 
 - Baseada em array interno contínuo.
 - Quando um item é removido, os elementos seguintes **são todos deslocados para a esquerda**, reindexando a lista.
@@ -56,7 +56,7 @@ Essa exceção ocorre quando modificamos uma lista (`ArrayList`) enquanto a perc
 
 ---
 
-## 🧪 Por que o `for` tradicional pode falhar ao remover elementos
+## Por que o `for` tradicional pode falhar ao remover elementos
 
 Ao usar:
 
@@ -84,7 +84,7 @@ Assim, os elementos ainda a serem verificados **não se deslocam** com a remoç�
 
 ---
 
-## ✅ Conclusão
+## Conclusão
 
 | Tema                          | Abordagem Segura                                   |
 |------------------------------|-----------------------------------------------------|
