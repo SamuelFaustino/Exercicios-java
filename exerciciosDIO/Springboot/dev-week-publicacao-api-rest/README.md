@@ -13,6 +13,7 @@
     1) Foi criado uma abstração do domínio no figma, coletado as informações que aparecem e com essas informações um  json que representa essas dados e possíveis features. 
 	    - Editor Json/ validar : https://jsoneditoronline.org/
         - estruturando o json pensando nas endidades:
+
         ```json
             {
                 "name": "Samuel",
@@ -82,6 +83,7 @@ classDiagram
   User "1" *-- "1" Card
   User "1" *-- "N" News
 ```    
+
     2) Após a criação das classes do Model, será necessário os devidos mapeamentos das entidades para o banco. 
     3) A criação da camada Repository (JPA Repository) que é uma interface do Usuário, o que vai prover operações básicas de manipulação.
     4) Não será utilizado o application.properties, toda a área de resources será substituido pelo padrão .yml - que é mais flexivel, e terá um perfil de dev, com as configurações (datasource, jpa, h2).
